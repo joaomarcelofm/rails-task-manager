@@ -1,0 +1,13 @@
+<h1><%= @task.name %></h1>
+<h4><%= @task.description %></h3>
+<p>Owner: <%= @task.owner %></p>
+
+<h5> <%= @task.status %></h5>
+
+<%= render "button" %>
+
+<br>
+
+<%= link_to 'Back to Index', tasks_path %> | <%= link_to 'Edit task', edit_task_path %> | <%= link_to 'Delete task', task_path(@task), method: :delete %>
+
+

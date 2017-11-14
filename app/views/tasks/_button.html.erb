@@ -1,0 +1,4 @@
+<%= form_for @task do |f| %>
+  <%= f.hidden_field :status, value: !@task.status %>
+  <%= f.submit 'Mark as done' %>
+<% end %>
